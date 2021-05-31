@@ -1,0 +1,79 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: all 1s ease-in-out;
+}
+
+.heading {
+  text-align: center;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+
+.heading h1 {
+  box-shadow: 0 3px 10px black;
+  padding: 20px;
+}
+
+.algos > .container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px;
+}
+
+button {
+  padding: 8px 13px;
+  background-color: inherit;
+  border: 1px solid blue;
+  color: white;
+  margin: 0 8px;
+  border-radius: 4px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.7);
+}
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #fff;
+  color: black;
+  border: none;
+  border: 1px solid white;
+}
+
+/* bars styling */
+#array {
+  background-color: rgba(255, 255, 255, 0.315);
+  height: 413px;
+  box-shadow: 0 3px 10px black;
+  max-width: 940px;
+  margin: auto;
+  position: relative;
+  margin-top: 64px;
+  padding: 20px;
+}
+
+.block {
+  width: 28px;
+  background-color: #6b5b95;
+  position: absolute;
+  bottom: 0;
+  transition: 0.2s all ease-in-out;
+  border: 1px solid rgb(0, 0, 0);
+}
+
+.block_id {
+  position: absolute;
+  color: black;
+  margin-top: -20px;
+  width: 100%;
+  text-align: center;
+}

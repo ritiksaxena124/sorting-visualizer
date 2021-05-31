@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="sorting.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>Sorting Visualizer</title>
+  </head>
+  <body>
+    <div class="heading">
+      <h1>Sorting Visualizer</h1>
+    </div>
+
+    <section class="algos">
+      <div class="container">
+        <div class="newArr">
+          <button id="newArray">Generate Array</button>
+        </div>
+        <div class="sortingAlgo">
+          <button id="Bubble">Bubble sort</button>
+          <button id="selection">Selection sort</button>
+          <button id="insertion">Insertion sort</button>
+          <button id="quick">Quick sort</button>
+          <button id="merge">Merge sort</button>
+        </div>
+      </div>
+    </section>
+    <div id="array"></div>
+  </body>
+  <script src="js_files/sorting.js"></script>
+  <script src="js_files/bubble.js"></script>
+  <script src="js_files/selection.js"></script>
+  <script src="js_files/insertion.js"></script>
+</html>
