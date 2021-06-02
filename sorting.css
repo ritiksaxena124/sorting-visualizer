@@ -15,6 +15,7 @@ body {
   color: white;
   margin: auto;
   text-align: center;
+  width: 100vw;
 }
 
 .heading h1 {
@@ -28,6 +29,11 @@ body {
   margin: 20px;
 }
 
+.sortingAlgo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 button {
   padding: 8px 13px;
   background-color: inherit;
@@ -37,6 +43,7 @@ button {
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
   box-shadow: 0 3px 10px rgb(0, 0, 0, 0.7);
+  margin: 5px;
 }
 button:focus {
   outline: none;
@@ -51,29 +58,44 @@ button:hover {
 
 /* bars styling */
 #array {
-  background-color: rgba(255, 255, 255, 0.315);
-  height: 413px;
+  max-height: 500px;
   box-shadow: 0 3px 10px black;
-  max-width: 940px;
+  max-width: 90%;
   margin: auto;
-  position: relative;
   margin-top: 64px;
+}
+.bars-area {
+  display: flex;
+  margin: 0 auto;
   padding: 20px;
+  justify-content: center;
 }
 
 .block {
-  width: 28px;
   background-color: #6b5b95;
-  position: absolute;
-  bottom: 0;
   transition: 0.2s all ease-in-out;
   border: 1px solid rgb(0, 0, 0);
+  width: 30px;
+  position: relative;
+  margin: 7px;
 }
 
 .block_id {
-  position: absolute;
-  color: black;
+  /* position: absolute; */
+  color: white;
   margin-top: -20px;
   width: 100%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* media queries */
+@media screen and (max-width: 450px) {
+  .heading h1 {
+    font-size: 20px;
+  }
+  button {
+    font-size: 12px;
+  }
 }

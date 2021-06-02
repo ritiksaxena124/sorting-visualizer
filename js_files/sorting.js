@@ -1,7 +1,8 @@
-var container = document.querySelector("#array");
+var container = document.querySelector(".bars-area");
 // function to generate array
 function generateArray() {
-  for (var i = 0; i < 30; i++) {
+  container.innerHTML = "";
+  for (var i = 0; i < 12; i++) {
     // return a random value
     var value = Math.ceil(Math.random() * 100);
     // creating div element
@@ -11,7 +12,6 @@ function generateArray() {
 
     // adding style to div
     array_ele.style.height = `${value * 3}px`;
-    array_ele.style.transform = `translate(${i * 30}px)`;
 
     // creating label for displaying height if each block
     var array_ele_label = document.createElement("label");
@@ -24,6 +24,9 @@ function generateArray() {
   }
 }
 
-// const generate = document.querySelector("#newArray");
-// generate.addEventListener("click", generateArray);
-generateArray();
+const generate = document.querySelector("#newArray");
+generate.addEventListener("click", () => {
+  generateArray();
+  enabled();
+  document.querySelectorAll("button").setAttribute("disabled", "disabled");
+});
