@@ -65,5 +65,6 @@ async function InsertionSort(delay = 200) {
     bars[i].style.backgroundColor = " rgb(49, 226, 13)";
   }
 }
-
-InsertionSort();
+document.querySelector("#insertion").onclick = () => {
+  InsertionSort();
+};
