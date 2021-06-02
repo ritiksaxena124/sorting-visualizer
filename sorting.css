@@ -62,7 +62,7 @@ button:hover {
   box-shadow: 0 3px 10px black;
   max-width: 90%;
   margin: auto;
-  margin-top: 64px;
+  margin-top: 30px;
 }
 .bars-area {
   display: flex;
