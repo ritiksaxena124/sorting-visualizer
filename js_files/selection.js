@@ -54,4 +54,7 @@ async function SelectionSort(delay = 200) {
 const selection = document.querySelector("#selection");
 selection.addEventListener("click", () => {
   SelectionSort();
+  Bubble.disabled = true;
+  insertion.disabled = true;
+  selection.disabled = true;
 });

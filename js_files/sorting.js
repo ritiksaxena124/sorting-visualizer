@@ -28,5 +28,13 @@ const generate = document.querySelector("#newArray");
 generate.addEventListener("click", () => {
   generateArray();
   enabled();
-  document.querySelectorAll("button").setAttribute("disabled", "disabled");
 });
+const insertion = document.getElementById("insertion");
+const selection = document.getElementById("selection");
+const Bubble = document.getElementById("Bubble");
+
+function enabled() {
+  insertion.disabled = false;
+  selection.disabled = false;
+  Bubble.disabled = false;
+}

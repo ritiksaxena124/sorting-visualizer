@@ -56,4 +56,7 @@ async function BubbleSort(delay = 100) {
 const bubble = document.querySelector("#Bubble");
 bubble.addEventListener("click", () => {
   BubbleSort();
+  Bubble.disabled = true;
+  insertion.disabled = true;
+  selection.disabled = true;
 });

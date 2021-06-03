@@ -67,4 +67,7 @@ async function InsertionSort(delay = 200) {
 }
 document.querySelector("#insertion").onclick = () => {
   InsertionSort();
+  Bubble.disabled = true;
+  insertion.disabled = true;
+  selection.disabled = true;
 };
