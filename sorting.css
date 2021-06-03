@@ -37,13 +37,13 @@ body {
 button {
   padding: 8px 13px;
   background-color: inherit;
-  border: 1px solid blue;
   color: white;
   margin: 0 8px;
   border-radius: 4px;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0 3px 10px rgb(0, 0, 0, 0.7);
   margin: 5px;
+  border: none;
+  box-shadow: 0 3px 10px black;
 }
 button:focus {
   outline: none;
@@ -53,7 +53,6 @@ button:hover {
   background-color: #fff;
   color: black;
   border: none;
-  border: 1px solid white;
 }
 
 /* bars styling */
@@ -69,6 +68,7 @@ button:hover {
   margin: 0 auto;
   padding: 20px;
   justify-content: center;
+  height: 350px;
 }
 
 .block {
@@ -88,7 +88,6 @@ button:hover {
   align-items: center;
   justify-content: center;
 }
-
 /* media queries */
 @media screen and (max-width: 450px) {
   .heading h1 {

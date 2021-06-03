@@ -49,7 +49,7 @@ async function BubbleSort(delay = 100) {
       blocks[j + 1].style.backgroundColor = "#6b5b95";
     }
     // change the color of maximum bar
-    blocks[blocks.length - i - 1].style.backgroundColor = "green";
+    blocks[blocks.length - i - 1].style.backgroundColor = "rgb(49, 226, 13)";
   }
 }
 

@@ -47,12 +47,12 @@ async function SelectionSort(delay = 200) {
     }
     await swap(blocks[min], blocks[i]);
     blocks = document.querySelectorAll(".block");
-    blocks[i].style.backgroundColor = "green"; // change the color of sorted bar to green
+    blocks[i].style.backgroundColor = "rgb(49, 226, 13)"; // change the color of sorted bar to green
   }
 }
 
-const selection = document.querySelector("#selection");
-selection.addEventListener("click", () => {
+const Selection = document.querySelector("#selection");
+Selection.addEventListener("click", () => {
   SelectionSort();
   Bubble.disabled = true;
   insertion.disabled = true;
